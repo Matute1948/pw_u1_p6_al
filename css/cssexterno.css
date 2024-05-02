@@ -1,0 +1,27 @@
+/*
+selector{
+    declaracion1;
+    declaracion2;
+    -
+    -
+    -
+    -
+    declaracionN;
+}
+*/
+
+h1{
+    color:blueviolet;
+    background: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.clasemedia {
+    color: brown;
+    background-color: yellow;
+}
+
+.clasealta{
+    color: aquamarine;
+    background-color: blueviolet;
+}

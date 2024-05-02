@@ -1,0 +1,47 @@
+/*Combinacion de selectores*/
+/*Combinacion jerarquica y solo aplica cuando hay un padre y dentro de el hay hijo de tipo elemento*/
+/*Es como si tuvieron los dos separados pero unidos*/
+.menu li {
+    list-style: none;
+    display: inline-block;
+    margin: 5px 15px; /*aplica a los 4 lados*/
+    
+     /*margin: 10px 70px;el primero numero aplica arriba y abajo y el segundo a los lados WoW
+    margin: 10px 20px 30px 40px; /*Esta en sentido horaraio 
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 40px;*/
+    border: 1px dashed blue;
+    padding: 5px 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.menu {
+    /*a todo el espacio y el color solo al contenido*/
+    background: #f7dc6f ;
+    padding: 5px 15px;
+    text-align: left;
+    
+}
+
+h1 {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+
+/*
+.menu, li {
+    color:red;
+}
+
+li {
+    background-color: black;
+}
+*/
