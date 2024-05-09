@@ -6,48 +6,70 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/blog.css">
 </head>
-<body>
-    <header>
-        <h1>My Blog</h1>
-    </header>
-    <nav class="menu">
-        <ul>
-            <li>Principal</li>
-            <li>Help</li>
-            <li>Contacto</li>
-        </ul>
-    </nav>
-    
-    <section>
-        <article>
-            <time datetime="12-10-2018">Publicado el 12-10-2018</time>
-            <h2>Titulo del articulo</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem non voluptatem ex ab repellat commodi in dolor ratione recusandae dolorem. Autem inventore laudantium, ipsam provident veritatis laborum et eaque in vel ut quis dicta dolorem rerum quae modi soluta maxime accusamus accusantium similique vitae at nam expedita. Illum, sequi quia!</p>
-            <footer>
-                <p>Comentarios (1)</p>
-            </footer>
-        </article>
 
-        <article>
-            <time datetime="25-04-2024">Publicado el 12-10-2018</time>
-            <h2>Flash desaparece durante la crisis</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur debitis vitae ex amet unde. Facere quae optio laboriosam facilis modi ut debitis nam, ipsum cupiditate dolor illum odio, ipsa tenetur minus dignissimos blanditiis pariatur laborum eum reiciendis itaque repudiandae beatae. Dolorem corrupti dolores vitae quod dicta, mollitia eius accusantium inventore harum cumque ad, pariatur reprehenderit libero natus repellendus? Dolor, dolores.</p>
-            <footer>
-                <p>Comentarios (5)</p>
-            </footer>
-        </article>
-    </section>
-    <aside>
-        <blockquote cite="https://miblog2.com">
-            Referencia a 2022
-        </blockquote>
-        <blockquote cite="https://miblog3.com">
-            Referencia a 2023
-        </blockquote>
-    </aside>
-    <!--el footer no es exclsivo del body puedo usarlo en cualquier parte del html-->
-    <footer>
-        <h3>Derecho reservados UCE 2010-2018</h3>
-    </footer>
+<body>
+    <div class="agrupar">
+        <header class="cabecera">
+            <h1>Facultad de Ciencias Fisicas y Matemáticas</h1>
+            <h4>Myb First Blog</h4>
+    
+        </header>
+        <nav class="menu">
+            <ul>
+                <li>Principal</li>
+                <li>Ayuda</li>
+                <li>Contacto</li>
+            
+            </ul>
+        </nav>
+    
+        <section class="seccion">
+            <article id="id_Articulo1">
+                <time datetime="12-10-2018"> Publicado el 12-10-2018</time>
+                <h2>Titulo del primer articulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aperiam dolor laudantium!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aperiam dolor laudantium!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aperiam dolor laudantium!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aperiam dolor laudantium!
+                    
+                </p>
+                <img src="/img/libro.jpg" alt="Error al cargar imagen">
+                <footer>
+                    <p>------- COMENTARIOS -------</p>
+                </footer>
+            </article>
+    
+            <article id="id_Articulo2">
+                <time datetime="25-04-2024"> Publicado el 01-12-2024</time>
+                <h2>Flash desaparece durante la crisis</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aperiam dolor laudantium!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aperiam dolor laudantium!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aperiam dolor laudantium!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aperiam dolor laudantium!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aperiam dolor laudantium!
+                </p>
+                <img src="/img/libro.jpg" alt="Error al cargar imagen">
+                <footer>
+                    <p>--------- COMENTARIOS ---------</p>
+                </footer>
+            </article>
+    
+        </section>
+    
+        <aside class="referencias">
+            <blockquote cite="https://miblog2.com">
+                referencia a 2022
+            </blockquote>
+    
+            <blockquote cite="https://miblog2.com">
+                referencia a 2023
+            </blockquote>
+        </aside>
+    
+        <footer class="pie">
+            <p>DERECHOS RESERVADOS UCE PARA 2023 - 2024 </p>
+        </footer>
+        
+    </div>
 </body>
 </html>
