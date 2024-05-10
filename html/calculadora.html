@@ -5,8 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function cambiarTexto (idlabelnum1){
-            
+        function cambiarTexto(idElemento) {
+            document.getElementById(idElemento).style.background="yellow";
+            document.getElementById(idElemento).style.fontSize="30px";
+ 
+        }
+ 
+        function sumar(numero1, numero2) {
+            var total = numero1 + numero2;
+            console.log(total);
+           
+        }
+ 
+        /* OTRA FORMA DE SUMAR */
+        function sumarCompleto(numero1, numero2) {
+            var num1 = parseInt(document.getElementById("idnum1").value);
+            var num2 = parseInt(document.getElementById("idnum2").value);
+            var total = num1 + num2;
+            console.log(total);
+           
         }
     </script>
 </head>
@@ -21,6 +38,17 @@
         <!--espera un comportamiento despues de clara el evento-->
         <button onclick="document.getElementById('idlabelnum1').style.color='red'">Cambiar color</button>
         <button onclick="document.getElementById('idlabelnum1').style.fontSize='30px'">Cambiar tamaño</button>
+
+        <!-- este es el externo -->
+ 
+        <button onclick="cambiarTexto('idlabelnum1')">Cambiar numero 1</button>
+        <button onclick="cambiarTexto('idlabelnum2')">Cambiar numero 2</button>
+ 
+ 
+        <button onclick="sumar(document.getElementById('idnum1').value, document.getElementById('idnum2').value)">SUMAR</button>
+        <button onclick="sumarCompleto('idnum1','idnum2')">SUMAR</button>
+
+
     </section>
     <footer></footer>
 </body>
