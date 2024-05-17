@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/calculadora.css">
+    <script src="/js/calculadoraCompleta.js"></script>
 </head>
 
 <body>
@@ -16,25 +17,25 @@
         <!-- y va a ver otro que si contenga todo lo demas, son como hijos del primero  -->
         <div class="container">
             <div class="calculadora">
-                <div class="display">98x9</div>
-                <button class="col-2">C</button>
-                <button>&larr;</button>
-                <button>%</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>x</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>+</button>
-                <button>3</button>
-                <button>2</button>
-                <button>1</button>
-                <button>-</button>
-                <button class="col-2">0</button>
-                <button>.</button>
-                <button>=</button>
+                <div class="display"><label id="idResultado">0</label></div>
+                <button class="col-2" onclick="borrarTodo()">C</button>
+                <button id="idBorrar" onclick="borrarUno()">&larr;</button>
+                <button id="idDividir" onclick="operarSigno('/')">%</button>
+                <button id="id-7" onclick="numeros('7')">7</button>
+                <button id="id-8" onclick="numeros('8')">8</button>
+                <button id="id-9" onclick="numeros('9')">9</button>
+                <button id="idMulti" onclick="operarSigno('*')">x</button>
+                <button id="id-4" onclick="numeros('4')">4</button>
+                <button id="id-5" onclick="numeros('5')">5</button>
+                <button id="id-6" onclick="numeros('6')">6</button>
+                <button id="idSuma" onclick="operarSigno('+')">+</button>
+                <button id="id-1" onclick="numeros('1')">1</button>
+                <button id="id-2" onclick="numeros('2')">2</button>
+                <button id="id-3" onclick="numeros('3')">3</button>
+                <button id="idResta" onclick="operarSigno('-')">-</button>
+                <button id="id-0" class="col-2" onclick="numeros('0')">0</button>
+                <button id="idPunto" onclick="numeros('.')">.</button>
+                <button id="idIgual" onclick="operar()">=</button>
             </div>
         </div>
     </section>

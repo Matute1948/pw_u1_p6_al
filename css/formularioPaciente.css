@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background: #263238;
+}
+
+p:before {
+    content: attr(type);
+    display: block;
+    margin: 5px 2xp;
+    font-size: 15px;
+    color: #263238;
+}
+
+input{
+    width: 300px;
+    border: none;
+    border-bottom: 2px solid white;
+    background: none;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 2px solid #10133b;
+}
+
+h2{
+    margin: 10px 2px;
+    width: 100px;
+    color: #263238;
+    border-bottom: 3px solid #10133b;
+}
+
+.form{
+    width: 350px;
+    height: 400px;
+    background: #3c8c84;
+    border-radius: 10px;
+    padding: 25px 30px;
+    box-shadow: 10px 10px 20px 5px black;
+}
+
+
+
+
