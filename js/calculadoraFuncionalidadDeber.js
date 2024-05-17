@@ -12,9 +12,7 @@ function numeros(num) {
 
 function operar() {
     var display = document.getElementById("idResultado");
-    // Evalúa la operación almacenada en la variable global 'operacion'
     var resultado = eval(display.innerText);
-    // Muestra el resultado en el display
     display.innerText = resultado;
     operacion = "";
 }
@@ -24,9 +22,7 @@ function operarSigno(signo) {
     if (operacion !== "") {
         operar();
     }
-    // Guarda el signo de la operación pendiente
     operacion = signo;
-    // Guarda la operación hasta el momento en el display
     display.innerText += "" + operacion + "";
 }
 
